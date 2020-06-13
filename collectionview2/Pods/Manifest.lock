@@ -1,0 +1,32 @@
+PODS:
+  - IBAnimatable (6.1.0)
+  - OnOffButton (1.5)
+  - Parchment (2.4.0)
+  - TextFieldEffects (1.6.0)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - IBAnimatable
+  - OnOffButton
+  - Parchment
+  - TextFieldEffects
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - IBAnimatable
+    - OnOffButton
+    - Parchment
+    - TextFieldEffects
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  OnOffButton: 0753a41630dc5c7ecd7d996a4154a1c79f33c99f
+  Parchment: 002785473861582385db5c6725165353c500198e
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: 044626e8f7f9db0418ab85f00232bb1e7c11cc83
+
+COCOAPODS: 1.9.3

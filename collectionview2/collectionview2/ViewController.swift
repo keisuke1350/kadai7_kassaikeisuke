@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import XLPagerTabStrip
+
+let firstViewController = UIViewController()
+let secondViewController = UIViewController()
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
@@ -93,9 +97,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("didSelectItemAt:", indexPath)
-        let vc = DetailViewController()
-        vc.sdgsinfo = infoLists[indexPath.row]
-        navigationController?.pushViewController(vc,  animated: true)
+        if indexPath == [0,0]{
+            let vc = DescriptionViewController()
+            vc.sdgsinfo = infoLists[indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+            let vc = DetailViewController()
+            vc.sdgsinfo = infoLists[indexPath.row]
+            navigationController?.pushViewController(vc,  animated: true)
+        }
         
     }
   

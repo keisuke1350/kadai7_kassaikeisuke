@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import TextFieldEffects
+
 
 class DetailViewController: UIViewController,UITableViewDelegate,UITextFieldDelegate,UITableViewDataSource{
     
@@ -21,6 +23,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITextFieldDele
     var sdgsinfo: SdgsInfo?
     let userDafaults = UserDefaults.standard
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +31,6 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITextFieldDele
         if let value = userDafaults.stringArray(forKey: "Array"){
             textArray = value
         }
-        
         toDoTableView.delegate = self
         toDoTableView.dataSource = self
         textField.delegate = self
@@ -39,6 +41,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITextFieldDele
         configureToDoTableViewCell()
         toDoTableView.allowsMultipleSelectionDuringEditing = true
         navigationItem.rightBarButtonItem = editButtonItem
+
     }
     
     override func setEditing(_ editing: Bool, animated: Bool) {
@@ -84,6 +87,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITextFieldDele
         
         //タップしたときにその配列の番号の中身を取り出して値を渡す
         print("didSelectRowAt:", indexPath)
+        //エラーの原因の可能性
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoTableViewCell", for: indexPath) as!ToDoTableViewCell
         cell.iconView.image =
             UIImage(named: "didcheck")

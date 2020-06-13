@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-collectionview2/Pods-collectionview2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework
+${BUILT_PRODUCTS_DIR}/OnOffButton/OnOffButton.framework
+${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework
+${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework
+${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework

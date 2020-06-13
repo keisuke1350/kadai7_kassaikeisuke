@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescriptionViewController" customModule="collectionview2" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionDesc" destination="JDJ-8v-ips" id="C5x-LQ-Rgc"/>
+                <outlet property="descriptionImage" destination="NAi-Aj-nSN" id="SCF-2v-gP5"/>
+                <outlet property="descriptionTitle" destination="V4f-fb-Wtr" id="NRi-Vc-sdj"/>
+                <outlet property="view" destination="dGw-dM-MR8" id="OGU-ou-eGh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dGw-dM-MR8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kokuren" translatesAutoresizingMaskIntoConstraints="NO" id="VXI-Vy-cpk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Rd-iw-aFg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WCW-em-foG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAi-Aj-nSN">
+                    <rect key="frame" x="157" y="69" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Rhr-TF-Xtm"/>
+                        <constraint firstAttribute="width" constant="100" id="rkn-Uw-uS2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4f-fb-Wtr">
+                    <rect key="frame" x="16" y="194" width="382" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Title">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="17" name="AppleGothic"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-8v-ips">
+                    <rect key="frame" x="16" y="235" width="382" height="13.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="description">
+                            <attributes>
+                                <font key="NSFont" size="11" name="AppleGothic"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NAi-Aj-nSN" firstAttribute="centerX" secondItem="dGw-dM-MR8" secondAttribute="centerX" id="1c5-b6-mIJ"/>
+                <constraint firstItem="JDJ-8v-ips" firstAttribute="leading" secondItem="eez-4h-wnT" secondAttribute="leading" constant="16" id="26M-aM-7JZ"/>
+                <constraint firstItem="JDJ-8v-ips" firstAttribute="centerX" secondItem="dGw-dM-MR8" secondAttribute="centerX" id="4KO-ls-Ni0"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="bottom" secondItem="2Rd-iw-aFg" secondAttribute="bottom" id="6zJ-3P-i9H"/>
+                <constraint firstItem="JDJ-8v-ips" firstAttribute="top" secondItem="V4f-fb-Wtr" secondAttribute="bottom" constant="20" id="CGy-5Q-HLw"/>
+                <constraint firstItem="VXI-Vy-cpk" firstAttribute="top" secondItem="dGw-dM-MR8" secondAttribute="top" id="Ij3-fB-KNJ"/>
+                <constraint firstItem="NAi-Aj-nSN" firstAttribute="top" secondItem="eez-4h-wnT" secondAttribute="top" constant="25" id="KT4-3t-t6K"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="trailing" secondItem="2Rd-iw-aFg" secondAttribute="trailing" id="TDy-2R-6qX"/>
+                <constraint firstItem="VXI-Vy-cpk" firstAttribute="leading" secondItem="eez-4h-wnT" secondAttribute="leading" id="TYA-0I-MOl"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="trailing" secondItem="V4f-fb-Wtr" secondAttribute="trailing" constant="16" id="ThR-MM-ouF"/>
+                <constraint firstItem="2Rd-iw-aFg" firstAttribute="top" secondItem="eez-4h-wnT" secondAttribute="top" id="UDp-HY-B29"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="trailing" secondItem="VXI-Vy-cpk" secondAttribute="trailing" id="f4l-ap-fOA"/>
+                <constraint firstItem="2Rd-iw-aFg" firstAttribute="leading" secondItem="eez-4h-wnT" secondAttribute="leading" id="gaB-73-VqG"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="trailing" secondItem="JDJ-8v-ips" secondAttribute="trailing" constant="16" id="jeY-AG-Nvq"/>
+                <constraint firstItem="V4f-fb-Wtr" firstAttribute="centerX" secondItem="dGw-dM-MR8" secondAttribute="centerX" id="kRS-Fc-4ws"/>
+                <constraint firstItem="V4f-fb-Wtr" firstAttribute="top" secondItem="NAi-Aj-nSN" secondAttribute="bottom" constant="25" id="ok7-r0-MxR"/>
+                <constraint firstItem="eez-4h-wnT" firstAttribute="bottom" secondItem="VXI-Vy-cpk" secondAttribute="bottom" id="qrc-Jr-Bw1"/>
+                <constraint firstItem="V4f-fb-Wtr" firstAttribute="leading" secondItem="eez-4h-wnT" secondAttribute="leading" constant="16" id="rzv-7h-OsY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eez-4h-wnT"/>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kokuren" width="341" height="512"/>
+    </resources>
+</document>
